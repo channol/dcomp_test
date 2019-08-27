@@ -149,7 +149,7 @@ services:
     image: ${SMFSM_IMG:-sm}
     volumes:
       # Mount a local file to the container.
-      - "./config/smf_cfg_ls_upf.json:/etc/config/config.json"
+      - "./config/smf_cfg_op.json:/etc/config/config.json"
       #- "./config/450udm:/opt/casa/smf/sm/450udm"
       - "./script:/cfg"
       - "./log:/tmp/cores"
@@ -226,7 +226,7 @@ services:
     image: ${UEMGR_IMG:-uemgr}
     volumes:
       # Mount a local file to the container.
-      - "./config/uemgr_ls.json:/etc/config/config.json"
+      - "./config/uemgr_op.json:/etc/config/config.json"
     security_opt:
       - apparmor:unconfined
     #ports:

@@ -9,4 +9,4 @@ log_level : debug
 version: 1.0.0
 plmns:
   - {mcc: '450',mnc: '05'}
-  - {mcc: '460',mnc: '010'}
+  - {mcc: '311',mnc: '270'}
